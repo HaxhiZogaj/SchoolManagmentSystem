@@ -1,0 +1,102 @@
+﻿{
+   "CodeGenerationMode": 4,
+   "ContextClassName": "SchoolMSContext",
+   "ContextNamespace": null,
+   "FilterSchemas": false,
+   "IncludeConnectionString": false,
+   "ModelNamespace": null,
+   "OutputContextPath": null,
+   "OutputPath": "Models",
+   "PreserveCasingWithRegex": true,
+   "ProjectRootNamespace": "SchoolManagmentSystem",
+   "Schemas": null,
+   "SelectedHandlebarsLanguage": 2,
+   "SelectedToBeGenerated": 0,
+   "T4TemplatePath": null,
+   "Tables": [
+      {
+         "Name": "[dbo].[Attendance]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Classes]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[ClassSubjects]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[ContactMessages]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Departments]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Enrollments]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Grades]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Homeworks]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[HomeworkSubmissions]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Parents]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Students]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Subjects]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Teachers]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Timetable]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Users]",
+         "ObjectType": 0
+      }
+   ],
+   "UiHint": null,
+   "UncountableWords": null,
+   "UseAsyncStoredProcedureCalls": true,
+   "UseBoolPropertiesWithoutDefaultSql": false,
+   "UseDatabaseNames": false,
+   "UseDateOnlyTimeOnly": true,
+   "UseDbContextSplitting": false,
+   "UseDecimalDataAnnotationForSprocResult": true,
+   "UseFluentApiOnly": true,
+   "UseHandleBars": false,
+   "UseHierarchyId": false,
+   "UseInflector": true,
+   "UseLegacyPluralizer": false,
+   "UseManyToManyEntity": false,
+   "UseNoDefaultConstructor": false,
+   "UseNoNavigations": false,
+   "UseNoObjectFilter": false,
+   "UseNodaTime": false,
+   "UseNullableReferences": false,
+   "UsePrefixNavigationNaming": false,
+   "UseSchemaFolders": false,
+   "UseSchemaNamespaces": false,
+   "UseSpatial": false,
+   "UseT4": false
+}

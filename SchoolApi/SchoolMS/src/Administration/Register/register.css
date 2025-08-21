@@ -1,0 +1,277 @@
+/* .register-container {
+  max-width: 500px; 
+  width: 90%;
+  margin: 130px auto 0 420px; 
+  padding: 45px 55px;
+  background-color: #f9faff;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(99, 102, 241, 0.18);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.register-container:hover {
+  box-shadow: 0 12px 38px rgba(79, 70, 229, 0.28);
+}
+
+
+.register-container h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #2d3354;
+  font-weight: 700;
+  font-size: 2.5rem; 
+}
+
+.register-container label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: #4b506d;
+  font-size: 1.05rem;
+}
+
+
+.register-container input[type="text"],
+.register-container input[type="email"],
+.register-container input[type="password"],
+.register-container select {
+  width: 100%;
+  padding: 16px 18px;
+  margin-bottom: 28px;
+  border: 1.5px solid #c5cae9;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  background-color: #ffffff;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.register-container button[type="submit"] {
+  width: 100%;
+  background-color: #4f46e5;
+  color: white;
+  padding: 16px 0;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.25rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.register-container button[type="submit"]:hover {
+  background-color: #3b36c6;
+}
+
+
+.message-area {
+  margin-top: 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.message {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #22c55e; 
+}
+
+.message.error {
+  color: #dc2626; 
+}
+
+
+.login-link-button {
+  background-color: #c4b812;
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+}
+
+.login-link-button:hover {
+  background-color: #1d4ed8;
+}
+
+
+@media screen and (max-width: 768px) {
+  .register-container {
+    width: 95%;
+    padding: 35px;
+    margin: 80px auto;
+  }
+}
+ */
+
+ /* 🧾 Register Container */
+.register-container {
+  max-width: 500px;
+  width: 90%;
+  margin: 130px auto; /* Centered horizontally */
+  padding: 45px 55px;
+  background-color: #f9faff;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(99, 102, 241, 0.18);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: box-shadow 0.3s ease;
+}
+
+.register-container:hover {
+  box-shadow: 0 12px 38px rgba(79, 70, 229, 0.28);
+}
+
+/* 🏷️ Heading */
+.register-container h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #2d3354;
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+/* 📩 Labels */
+.register-container label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: #4b506d;
+  font-size: 1.05rem;
+}
+
+/* 🔑 Inputs & Select */
+.register-container input[type="text"],
+.register-container input[type="email"],
+.register-container input[type="password"],
+.register-container select {
+  width: 100%;
+  padding: 16px 18px;
+  margin-bottom: 28px;
+  border: 1.5px solid #c5cae9;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  background-color: #ffffff;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.register-container input:focus,
+.register-container select:focus {
+  border-color: #4f46e5;
+  outline: none;
+  box-shadow: 0 0 9px rgba(79, 70, 229, 0.3);
+}
+
+/* 🔘 Submit Button */
+.register-container button[type="submit"] {
+  width: 100%;
+  background-color: #4f46e5;
+  color: white;
+  padding: 16px 0;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.25rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.register-container button[type="submit"]:hover {
+  background-color: #3b36c6;
+}
+
+/* 📢 Message Area */
+.message-area {
+  margin-top: 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+/* ✅ Success/Error Message */
+.message {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #22c55e;
+}
+
+.message.error {
+  color: #dc2626;
+}
+
+/* 🔗 Login Button */
+.login-link-button {
+  background-color: #c4b812;
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+}
+
+.login-link-button:hover {
+  background-color: #1d4ed8;
+}
+
+/* 📱 Responsive Styles */
+@media screen and (max-width: 1024px) {
+  .register-container {
+    margin: 100px auto;
+    padding: 40px;
+  }
+
+  .register-container h2 {
+    font-size: 2.2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .register-container {
+    width: 95%;
+    padding: 35px;
+    margin: 80px auto;
+  }
+
+  .register-container h2 {
+    font-size: 2rem;
+  }
+
+  .register-container input,
+  .register-container select {
+    font-size: 1rem;
+  }
+
+  .register-container button[type="submit"] {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .register-container {
+    padding: 25px;
+    margin: 60px auto;
+  }
+
+  .register-container h2 {
+    font-size: 1.8rem;
+  }
+
+  .register-container input,
+  .register-container select {
+    font-size: 0.95rem;
+  }
+
+  .register-container button[type="submit"] {
+    font-size: 1rem;
+  }
+}

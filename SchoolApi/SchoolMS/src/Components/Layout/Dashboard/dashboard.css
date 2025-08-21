@@ -1,0 +1,128 @@
+.dashboard-container {
+  padding: 2rem;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 50px;
+}
+
+.dashboard-container h1 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  color: #343a40;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.stat-box {
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.stat-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+.stat-box .icon {
+  font-size: 2.8rem;
+  color: #4e73df;
+  margin-right: 1rem;
+}
+
+.stat-box h3 {
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #212529;
+}
+
+.stat-box p {
+  margin: 0;
+  font-size: 1rem;
+  color: #6c757d;
+}
+/* ------------------------------------ */
+
+ .charts-row {
+  display: flex;
+  gap: 2rem;
+  margin-top: 30px;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.chart-section,
+.grades-chart {
+  background: #ffffff;
+  border-radius: 22px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.chart-section {
+   max-width: 800px;  /* increase width */
+  flex: 1 1 500px;
+}
+
+.chart-section h4 {
+  margin-bottom: 1rem;
+  text-align: center;
+  font-weight: 600;
+  color: #343a40;
+}
+
+.chart-section canvas {
+  width: 100% !important;
+  height: 320px !important;
+  max-height: 320px;
+}
+
+.grades-chart {
+  flex: 1 1 500px;
+  max-width: 1000px;
+}
+
+.grades-chart canvas {
+  width: 100% !important;
+  height: 320px !important;
+  max-height: 320px;
+}
+
+.chart-section:last-child {
+  max-width: 2200px;
+  margin: 0 auto 40px auto; /* center horizontally and add bottom spacing */
+  padding: 25px 30px;
+  border-radius: 22px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12);
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.chart-section:last-child h4 {
+  font-weight: 700;
+  color: #4e73df; /* match your icon color */
+  margin-bottom: 1.2rem;
+  text-align: center;
+}
+
+.chart-section:last-child canvas {
+  width: 100% !important;
+  height: 350px !important;
+}
+
+/* -------------------------------- */

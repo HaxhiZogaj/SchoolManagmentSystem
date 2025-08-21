@@ -1,0 +1,88 @@
+.notification-banner.serious {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  display: flex;
+  align-items: center;
+  min-width: 320px;
+  max-width: 500px;
+  padding: 16px 20px;
+  font-size: 15px;
+  border: 1px solid transparent;
+  border-left: 5px solid;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+  z-index: 9999;
+  animation: fadeSlideIn 0.4s ease;
+  color: #333;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.notification-banner .icon-container {
+  margin-right: 12px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.notification-banner .text-container {
+  flex: 1;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.notification-banner .close-icon {
+  cursor: pointer;
+  font-size: 18px;
+  margin-left: 16px;
+  color: #666;
+  font-weight: bold;
+  user-select: none;
+  transition: color 0.2s ease;
+}
+
+.notification-banner .close-icon:hover {
+  color: #222;
+}
+
+/* Variants */
+.notification-banner.success {
+  border-left-color: #28a745;
+  background-color: #e9f5ee;
+  color: #1c4f2c;
+}
+
+.notification-banner.error {
+  border-left-color: #dc3545;
+  background-color: #fbeaea;
+  color: #842029;
+}
+
+.notification-banner.info {
+  border-left-color: #007bff;
+  background-color: #e9f3fc;
+  color: #0c3c78;
+}
+
+/* Animations */
+@keyframes fadeSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .notification-banner.serious {
+    left: 10px;
+    right: 10px;
+    bottom: 20px;
+    font-size: 14px;
+    padding: 14px 18px;
+  }
+}

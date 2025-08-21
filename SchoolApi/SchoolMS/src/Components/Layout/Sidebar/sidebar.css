@@ -1,0 +1,186 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 240px;
+  background-color: #1e1e2f;
+  color: #ffffff;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transition: width 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  z-index: 1000;
+}
+
+.sidebar.collapsed {
+  width: 70px;
+}
+
+.top-section {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  gap: 10px;
+}
+
+.hamburger {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+
+.sidebar.collapsed .hamburger {
+  color: #ffffff; 
+  font-size: 24px; 
+  transform: rotate(180deg); 
+  transition: all 0.3s ease-in-out;
+}
+
+.sidebar-title {
+  font-size: 18px;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.sidebar-links {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+  flex-grow: 1;
+}
+
+.sidebar-links li {
+  padding: 0;
+}
+
+.sidebar-links li a,
+.dropdown-header {
+  padding: 15px 20px;
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  transition: background-color 0.2s;
+  white-space: nowrap;
+}
+
+.sidebar-links li a.active {
+  background-color: #333356;
+  border-radius: 8px;
+}
+
+.sidebar-links li a:hover,
+.dropdown-header:hover {
+  background-color: #2e2e4d;
+  border-radius: 8px;
+}
+.icon {
+  font-size: 18px;
+}
+
+.dropdown-header {
+  cursor: pointer;
+}
+
+.dropdown-caret {
+  margin-left: auto;
+}
+
+.dropdown-items {
+  list-style: none;
+  padding-left: 50px;
+  background-color: #2a2a40;
+}
+
+.dropdown-items li {
+  padding: 10px 0;
+}
+
+.dropdown-items li a {
+  font-size: 0.95rem;
+  color: #8ea4c0;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.dropdown-items li a:hover {
+  color: white;
+}
+
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 20px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.menu-item:hover {
+  background-color: #2e2e4d;
+  transform: scale(1.05);
+  border-radius: 8px;
+}
+
+.menu-item .icon {
+  font-size: 20px;
+  color: #ffffff; 
+}
+
+.menu-item span {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.sidebar.collapsed .menu-item span {
+  display: none;
+}
+
+.sidebar.collapsed .menu-item span {
+  display: none;
+}
+
+.sidebar {
+  scrollbar-width: thin; 
+  scrollbar-color: #888 transparent;
+}
+
+.sidebar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 3px;
+}
+
+.sidebar hr {
+ border: none;
+  border-top: 1px solid white;
+  margin: 12px 15px;
+  opacity: 0.3;
+}
+
+
+
+
+
+

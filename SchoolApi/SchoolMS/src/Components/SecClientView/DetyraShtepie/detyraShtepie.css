@@ -1,0 +1,181 @@
+.homework-section {
+  width: 100%;
+  padding: 50px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.homework-card {
+  padding: 36px 40px;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  width: 100%;
+  max-width: 1500px;
+  margin-bottom: 100px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.homework-card h2 {
+  font-size: 30px;
+  color: #00337f;
+  margin-bottom: 14px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+.description {
+  font-size: 17px;
+  color: #555a66;
+  margin-bottom: 36px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.5;
+}
+
+.search-bar {
+  width: 100%;
+  max-width: 400px;
+  padding: 12px 18px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 1.8px solid #c2c9d1;
+  margin: 0 auto 40px auto;
+  display: block;
+  outline: none;
+  transition: all 0.25s ease-in-out;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar:focus {
+  border-color: #00337f;
+  box-shadow: 0 0 10px rgba(0, 51, 127, 0.25);
+}
+
+.homework-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 34px;
+}
+
+.homework-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 28px;
+  background: #ffffff;
+  border-left: 6px solid #4f46e5;
+  padding: 24px 28px;
+  border-radius: 14px;
+  font-size: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  align-items: center;
+}
+
+.homework-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+}
+
+.homework-left {
+  flex: 1.4;
+  text-align: left;
+  color: #222831;
+}
+
+.homework-left h3 {
+  color: #00337f;
+  font-size: 20px;
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+
+.homework-left p {
+  margin: 6px 0;
+  color: #555a66;
+  line-height: 1.45;
+  font-weight: 500;
+}
+
+.homework-right {
+  flex: 1;
+  background: #d7dde4;
+  padding: 24px 28px;
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: inset 0 0 15px rgba(79, 70, 229, 0.1);
+}
+
+.homework-right form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.homework-right input[type="file"] {
+  padding: 10px 12px;
+  border: 1.5px solid #ccc;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: border-color 0.25s ease;
+}
+
+.homework-right input[type="file"]:hover,
+.homework-right input[type="file"]:focus {
+  border-color: #4f46e5;
+  outline: none;
+}
+
+.homework-right button {
+  padding: 12px 20px;
+  background-color: #00337f;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  transition: background-color 0.3s ease;
+}
+
+.homework-right button:hover {
+  background-color: #0050c0;
+}
+
+@media (max-width: 1024px) {
+  .homework-card {
+    padding: 30px 28px;
+  }
+  .homework-item {
+    padding: 20px 22px;
+  }
+}
+
+@media (max-width: 768px) {
+  .homework-item {
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+  }
+
+  .homework-right {
+    width: 100%;
+  }
+
+  .homework-left h3 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .homework-card {
+    padding: 25px 18px;
+  }
+  .search-bar {
+    max-width: 100%;
+  }
+}
