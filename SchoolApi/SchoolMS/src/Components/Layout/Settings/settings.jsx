@@ -6,13 +6,21 @@ const Settings = () => {
   const { theme, toggleTheme } = useContext(ThemeContext);
 
   return (
-    <div className="settings-page">
-      <h2>Settings</h2>
-      <div className="setting-item">
-        <span>Dark Mode</span>
-        <button onClick={toggleTheme}>
-          {theme === "light" ? "Enable Dark Mode" : "Disable Dark Mode"}
-        </button>
+    <div className={`settings-page ${theme}`}>
+      <h2 className="settings-title">Settings</h2>
+
+      <div className="settings-card">
+        <div className="setting-item">
+          <span className="setting-label">Dark Mode</span>
+          <label className="switch">
+            <input
+              type="checkbox"
+              onChange={toggleTheme}
+              checked={theme === "dark"}
+            />
+            <span className="slider"></span>
+          </label>
+        </div>
       </div>
     </div>
   );

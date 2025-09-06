@@ -4,8 +4,7 @@ import { useAuth } from "../../../Administration/AuthContext";
 import "./navbar.css";
 
 const links = [
-/*   { path: "/pjesmarrja", label: "Pjesmarresit" },  { path: "/klasa", label: "Klasa" },
- */  
+
   { path: "/lendetEKlasave", label: "Lenda Klases" }, { path: "/departamentet", label: "Department" },
   { path: "/regjistrimet", label: "Regjistrimi" }, { path: "/notat", label: "Notat" },
   { path: "/prindrit", label: "Prinderit" }, { path: "/studentet", label: "Studentet" },

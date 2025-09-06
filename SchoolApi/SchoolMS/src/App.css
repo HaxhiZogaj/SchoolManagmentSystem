@@ -9,7 +9,7 @@
 @import '../node_modules/@syncfusion/ej2-notifications/styles/material.css';
 @import "../node_modules/@syncfusion/ej2-react-grids/styles/material.css";
 
-* {
+ * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -25,6 +25,20 @@ body, html {
   height: auto !important;
   width: 100% !important;
 }
+
+
+/* /////////////////////////////////// */
+
+body.dark {
+  background: linear-gradient(to right, #6f6f92, #0c0c1b);
+  color: #e0e0e0;
+}
+
+body.dark .main-content {
+  background: linear-gradient(to right, #6f6f92, #0c0c1b) !important;
+}
+
+/*  //////////////////////////////////////// */
 
 
 .main-content {
