@@ -1,0 +1,35 @@
+body.light {
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+body.dark {
+  background-color: #121212;
+  color: #f8f9fa;
+}
+
+.settings-container {
+  padding: 20px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.settings-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.theme-btn {
+  padding: 6px 12px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+body.dark .theme-btn {
+  background-color: #444;
+}

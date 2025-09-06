@@ -19,8 +19,10 @@ import Contact from "./Components/Layout/Contact/contact";
 import Dashboard from "./Components/Layout/Dashboard/dashboard";
 import Footer from "./Components/Layout/Footer/footer";
 import Navbar from "./Components/Layout/Navbar/navbar";
+import Settings from "./Components/Layout/Settings/settings";
 import Sidebar from "./Components/Layout/Sidebar/sidebar";
 import UserInfo from "./Components/Layout/UserInfo/userInfo";
+
 import Departamentet from "./Components/SecClientView/Departamentet/departamentet";
 import DetyraShtepie from "./Components/SecClientView/DetyraShtepie/detyraShtepie";
 import DorzimiDetyrave from "./Components/SecClientView/DorzimiDetyrave/dorzimiDetyrave";
@@ -54,7 +56,7 @@ import Student from "./Pages/Student/student";
 import Subject from "./Pages/Subject/subject";
 import Teacher from "./Pages/Teacher/teacher";
 import TimeTable from "./Pages/TimeTable/timeTable";
-
+import { ThemeProvider } from "./ThemeContext.jsx";
 
 
 
@@ -108,6 +110,8 @@ function AppContent() {
            <Route path="/dorzimiDetyrave" element={<PrivateRoute element={<DorzimiDetyrave />} />} />
            <Route path="/schedulerReadonly" element={<PrivateRoute element={<SchedulerReadonly />} />} />
 
+            <Route path="/settings" element={<PrivateRoute element={<Settings />} />} />
+
 
            <Route path="/users" element={<PrivateRoute element={<Users />} allowedRoles={["Admin"]} />} />
            <Route path="/unauthorized" element={<PrivateRoute element={<Unauthorized />}/>} />
@@ -151,9 +155,11 @@ function AppContent() {
 function App() {
   return (
     <AuthProvider>
+      <ThemeProvider>
       <Router>
         <AppContent />
       </Router>
+      </ThemeProvider>
     </AuthProvider>
   );
 }

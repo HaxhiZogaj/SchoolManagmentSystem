@@ -42,7 +42,8 @@ const Navbar = () => {
             <span className="username">{user.username}</span>
             <img className="avatar" src={user.profileImage || "https://i.pravatar.cc/40"} />
             <span className={`arrow ${dropdownOpen ? "open" : ""}`}>&#9662;</span>
-            {dropdownOpen && ( <div className="dropdown-menu">  <Link to="/userinfo">User Info</Link> <Link to="/grades">Grades</Link> <hr />
+            {dropdownOpen && ( <div className="dropdown-menu">  <Link to="/userinfo">User Info</Link> <Link to="/grades">Grades</Link>   <Link to="/settings">Settings</Link>
+ <hr />
               <button onClick={handleLogout} className="logout-button">  Logout </button>
               </div>
             )}
