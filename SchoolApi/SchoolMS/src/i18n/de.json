@@ -1,0 +1,25 @@
+{
+  "nav": {
+    "schoolMs": "SchoolMS",
+    "searchPlaceholder": "Suchen...",
+    "dashboard": "Dashboard",
+    "clientView": "Schulkontrolle",
+    "subjectsClass": "Fach Klasse",
+    "departments": "Abteilungen",
+    "registrations": "Anmeldungen",
+    "grades": "Noten",
+    "parents": "Eltern",
+    "students": "Schüler",
+    "subjects": "Fächer",
+    "teachers": "Lehrer",
+    "schedule": "Stundenplan",
+    "users": "Benutzer",
+    "aboutUs": "Über Uns",
+    "contact": "Kontakt",
+    "userInfo": "Benutzerinfo",
+    "settings": "Einstellungen",
+    "logout": "Abmelden",
+    "login": "Anmelden",
+    "register": "Registrieren"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "nav": {
+    "schoolMs": "SchoolMS",
+    "searchPlaceholder": "Search...",
+    "dashboard": "Dashboard",
+    "clientView": "School Control",
+    "subjectsClass": "Subject Class",
+    "departments": "Departments",
+    "registrations": "Registrations",
+    "grades": "Grades",
+    "parents": "Parents",
+    "students": "Students",
+    "subjects": "Subjects",
+    "teachers": "Teachers",
+    "schedule": "Schedule",
+    "users": "Users",
+    "aboutUs": "About Us",
+    "contact": "Contact",
+    "userInfo": "User Info",
+    "settings": "Settings",
+    "logout": "Logout",
+    "login": "Login",
+    "register": "Register"
+  }
+}

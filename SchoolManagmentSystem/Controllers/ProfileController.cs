@@ -39,14 +39,6 @@ namespace SchoolManagmentSystem.Controllers
             }
         }
 
-
-
-
-
-
-
-
-
     }
 
 }
